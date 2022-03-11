@@ -1,0 +1,89 @@
+.box{
+    width:200px;
+    height:300px;
+    border-radius:5px;
+    background-color:white;
+    box-shadow:2px 2px 1px 3px gray;
+    padding:10px;
+    margin:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.boxwrapper{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    
+}
+.bookicon{
+    font-size:15px;
+    position:"absolute";
+
+}
+.box:hover{
+    cursor:pointer;
+}
+.homepageContainer{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    flex-direction:column;
+}
+.collections{
+    font-size:18px;
+    background-color:#282A35;
+    color:white;
+    padding:10px;
+    border-radius:5px;
+
+}
+.collections:hover{
+    cursor:pointer;
+}
+.collectionsItemContainer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+    position:absolute;
+    bottom:110px;
+    width:150px;
+    
+}
+.collectionsItem{
+    height:60px;
+    width:150px;
+    background-color:#282A35;
+    color:white;
+    padding:5px;
+    margin:2px;
+    font-size:18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:5px;
+}
+.collectionsItem:hover{
+    cursor:pointer;
+    background-color:#04AA6D;
+} 
+.collectionLink{
+    color:white;
+    pointer-events:none;
+}
+.collectionLink:hover{
+    color:white;
+    text-decoration:none;
+}  
+.collectionLink:active{
+    color:white;
+    text-decoration:none;
+    
+}
+
