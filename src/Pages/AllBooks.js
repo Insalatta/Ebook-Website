@@ -14,7 +14,7 @@ import p1 from "./Pictures/p1.webp";
 
 class Book extends React.Component{
     constructor(props){
-        super(props);
+        super(props); 
     }
     render(){ 
         const books = [

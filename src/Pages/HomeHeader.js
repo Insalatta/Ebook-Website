@@ -14,6 +14,7 @@ class Home extends React.Component{
                 opacity:0
             },
             allbooksActive:true,
+            magicalActive:false,
             romanceActive:false,
             documentaryActive:false,
         }
@@ -42,6 +43,7 @@ class Home extends React.Component{
     handleAllBooks = () =>{
         this.setState({
             allbooksActive:true,
+            magicalActive:false,
             romanceActive:false,
             documentaryActive:false,
             isVisible:false,
@@ -51,9 +53,22 @@ class Home extends React.Component{
         })
         
     }
+    handleMagical = () =>{
+        this.setState({
+            allbooksActive:false,
+            magicalActive:true,
+            romanceActive:false,
+            documentaryActive:false,
+            isVisible:false,
+            opac:{
+                opacity:0
+            }
+        })
+    }
     handleRomance = () =>{
         this.setState({
             allbooksActive:false,
+            magicalActive:false,
             romanceActive:true,
             documentaryActive:false,
             isVisible:false,
@@ -65,6 +80,7 @@ class Home extends React.Component{
     handleDocumentary = () =>{
         this.setState({
             allbooksActive:false,
+            magicalActive:false,
             romanceActive:false,
             documentaryActive:true,
             isVisible:false,
@@ -87,6 +103,7 @@ class Home extends React.Component{
                     </div>
                     <div style={this.state.opac} className="dropdownContainer">
                         <Link to="/" className={"homebox "+(this.state.allbooksActive?"dropdownActive":"")} onClick={this.handleAllBooks}>All</Link>
+                        <Link to="/magical" className={"homebox "+(this.state.magicalActive?"dropdownActive":"")} onClick={this.handleMagical}>Magical</Link>
                         <Link to="/romance" className={"homebox "+(this.state.romanceActive?"dropdownActive":"")} onClick={this.handleRomance}>Romance</Link>
                         <Link to="/documentary" className={"homebox "+(this.state.documentaryActive?"dropdownActive":"") } onClick={this.handleDocumentary}>Documentary</Link>
                     </div>

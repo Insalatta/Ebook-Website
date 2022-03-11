@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import "./Bootstrap/css/bootstrap.min.css";
 import "./index.css";
 import {BrowserRouter,Route,Routes} from "react-router-dom";
-import Home from "./Pages/Home";
+import Harry from "./Pages/Harry";
 import Book from "./Pages/Book";
 import About from "./Pages/About";
 import Search from "./Pages/Search";
@@ -22,6 +22,7 @@ function Main(){
       <Routes>
         <Route path="/" element={<HomeHeader />} >
           <Route path="/" element={<AllBooks />} />
+          <Route path="/magical" element={<Harry />} />
           <Route path="/romance" element={<Romance />} />
           <Route path="/documentary" element={<Documentary />} />
         </Route>
