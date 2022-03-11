@@ -13,7 +13,10 @@ import r1 from "./Pictures/r1.jpg";
 import p1 from "./Pictures/p1.webp";
 
 class Book extends React.Component{
-    render(){
+    constructor(props){
+        super(props);
+    }
+    render(){ 
         const books = [
             {
                 name:"Harry Potter and the Prisoner of Askaban",
@@ -111,7 +114,6 @@ const styles={
         textAlign:"center",
         fontWeight:"bold",
         fontSize:23,
-        padding:10,
     },
     bookname:{
         color:"black",
@@ -128,7 +130,9 @@ const styles={
         fontSize:12,
         textAlign:"center",
         opacity:0.8
+    },
+    container:{
+        margin:10
     }
 }
-
 export default Book;

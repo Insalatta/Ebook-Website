@@ -1,0 +1,62 @@
+.headerwrapper{
+    margin:10px;
+}
+.wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:20px;
+  }
+  .header{
+    text-align:center;
+    color:black;
+    font-weight:bold;
+    font-size:30px;
+  }
+  .book{
+    font-size:30px;
+    margin-right:15px;
+    margin-top:9px;
+    animation-name:iconAnimation;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+  }
+  .btn-wrapper-div{
+    height:44px;
+    width:100%;
+    display:flex;
+    background-color:#282A35;
+    align-items:center;
+    justify-content:space-between;
+    border-radius: 5px;
+  }
+  .mybtn{
+    text-decoration: none;
+    color:white;
+    font-size:18px;
+    width:25%;
+    height:44px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 5px;
+  }
+  .mybtn:hover{
+    text-decoration:none;
+    color:white;
+    background-color:black;
+  }
+  .btnactive{
+    background-color:#04AA6D;
+    color:white;
+  }
+  .btnactive:hover{
+    background-color:#04AA6D;
+  }
+  @keyframes iconAnimation{
+    50%{
+      color:#04AA6D;
+      transform:rotate(360deg);
+    }
+  }
+  

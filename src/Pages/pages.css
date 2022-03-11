@@ -18,7 +18,7 @@
     flex-wrap:wrap;
     align-items:center;
     justify-content:center;
-    
+    margin-top:30px;
 }
 .bookicon{
     font-size:15px;
@@ -46,44 +46,33 @@
 .collections:hover{
     cursor:pointer;
 }
-.collectionsItemContainer{
+.dropdownContainer{
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:space-around;
     position:absolute;
-    bottom:110px;
+    bottom:170px;
     width:150px;
-    
 }
-.collectionsItem{
-    height:60px;
-    width:150px;
-    background-color:#282A35;
+.homebox{
+    text-decoration:none;
     color:white;
-    padding:5px;
-    margin:2px;
     font-size:18px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    background-color:#282A35;
+    width:150px;
+    text-align:center;
+    padding:15px;
+    margin:2px;
     border-radius:5px;
+    height:50px;
 }
-.collectionsItem:hover{
-    cursor:pointer;
+.homebox:hover{
     background-color:#04AA6D;
-} 
-.collectionLink{
     color:white;
-    pointer-events:none;
+    text-decoration:none;
 }
-.collectionLink:hover{
-    color:white;
-    text-decoration:none;
-}  
-.collectionLink:active{
-    color:white;
-    text-decoration:none;
-    
+.dropdownActive{
+    background-color:#04AA6D;
 }
 

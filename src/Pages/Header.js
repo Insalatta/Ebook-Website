@@ -1,5 +1,5 @@
 import React from "react";
-import "../index.css";
+import "./header.css";
 import {Link} from "react-router-dom";
 
 class Header extends React.Component{
@@ -84,7 +84,7 @@ class Header extends React.Component{
     render(){
       return(
         
-            <div class="container-fluid">
+            <div class="headerwrapper">
                 <div className="wrapper">
                   <i className="glyphicon glyphicon-book book"></i>
                   <h1 className="header">
@@ -92,32 +92,18 @@ class Header extends React.Component{
                   </h1>
                 </div>
                 <div className="btn-wrapper-div">
-                    <div className={"mydiv "+(this.state.homeActive?"btnactive":"")}>
-                      <Link to="/" className={"mybtn "} onClick={this.handleHomeClick}>
+                    <Link to="/" className={"mybtn "+(this.state.homeActive?"btnactive":"")} onClick={this.handleHomeClick}>
                         <i className="glyphicon glyphicon-home"></i>
-                      </Link>
-                    </div>
-                    <div className={"mydiv "+(this.state.bookActive?"btnactive":"")}>
-                      <Link to="/Book" className={"mybtn "} onClick={this.handleBookClick}>BOOK</Link>
-                    </div>
-                    <div className={"mydiv "+(this.state.infoActive?"btnactive":"")}>
-                      <Link to="/Info" className={"mybtn "} onClick={this.handleInfoClick}>INFO</Link>
-                    </div>
-                    <div className={"mydiv "+(this.state.aboutActive?"btnactive":"")}>
-                      <Link to="/About" className={"mybtn "} onClick={this.handleAboutClick}>ABOUT</Link>
-                    </div>
-                    <div className={"mydiv "+(this.state.searchActive?"btnactive":"")}>
-                      <Link to="/Search" className={"mybtn "} onClick={this.handleSearchClick}>
+                    </Link>
+                    <Link to="/books" className={"mybtn "+(this.state.bookActive?"btnactive":"")} onClick={this.handleBookClick}>BOOK</Link>
+                    <Link to="/info" className={"mybtn "+(this.state.infoActive?"btnactive":"")} onClick={this.handleInfoClick}>INFO</Link>
+                    <Link to="/about" className={"mybtn "+(this.state.aboutActive?"btnactive":"")} onClick={this.handleAboutClick}>ABOUT</Link>
+                    <Link to="/search" className={"mybtn "+(this.state.searchActive?"btnactive":"")} onClick={this.handleSearchClick}>
                           <i className="glyphicon glyphicon-search"></i>
-                      </Link>
-                    </div>
+                    </Link>
                 </div>
                 
              </div> 
-              
-            
-            
-          
       )
     }
   }
